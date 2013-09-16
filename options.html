@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redmine Activities</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+  	<div class="container">
+	    <h3>Redmine Activities Chrome Extension</h3>
+
+
+	    <div class="form-horizontal">
+	    	<div class="control-group">
+	    		<label class="control-label" for="redmineUrl">Redmine Url</label>
+	    		<div class="controls">
+	      			<input type="text" name="redmineUrl">
+	    		</div>
+	    	</div>
+	    	<div class="control-group">
+	    		<label class="control-label" for="project">Project</label>
+	    		<div class="controls">
+	      			<input type="text" name="project">
+	    		</div>
+	    	</div>
+	    </div>
+
+	    <hr>
+	    <div class="form-horizontal">
+	    	<div class="control-group">
+	    		<label class="control-label" for="updateTimeout">Update every </label>
+	    		<div class="controls">
+	    			<input type="text" name="updateTimeout" class="input-small"/> seconds
+	    		</div>
+	    		
+	    	</div>
+	        <div class="control-group">
+	        	<label class="control-label" for="maxNUmberOfActivities">Show last</label>
+	        	<div class="controls">
+	        		<input type="text" name="maxNumberOfActivities" class="input-small"/>  activities.
+	        	</div>
+	        </div>
+	        <div class="control-group">
+  				<div class="controls">
+  					<label class="checkbox">
+						<input type="checkbox"  name="notificationsEnabled"/>
+  						Enable notifications
+  					</label>
+				</div>
+			</div>
+	    </div>
+
+
+	</div>
+
+    <script src="js/lib/jquery-1.10.2.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/lib/moment.min.js"></script>
+    <script src="js/options.js"></script>
+  </body>
+</html>

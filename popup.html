@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Redmine Activities</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style>
+      body{
+        width: 400px;
+        background-color: #e5e5e5;
+      }
+      .card{
+        margin: 5px;
+        padding: 3px 5px;
+        border-radius: 2px;
+        background: #fff;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      blockquote p{
+        font-size: 12px;
+      }
+      #logged, #unlogged, #unconfigured, #activity-template, #connection-error, #updating{
+        display: none;
+      }
+      .alert{
+        margin-bottom: 0px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div id="logged">
+    	<div id="list"></div>
+    </div>
+    <div id="unlogged" class="alert alert-info block">
+        <h4>Login required</h4>
+        <p>Login to Redmine to see recent activities in this popup.</p>
+        <a class="btn">Go to Redmine</a>
+    </div>
+    <div id="unconfigured" class="alert alert-block">
+        <h4>Missing configuration</h4>
+        <p>Go to options page and configure the extension.</p>
+        <a href="options.html" class="btn">Go options page</a>
+    </div>
+    <div id="connection-error" class="alert alert-error alert-block">
+        <h4>Connection Error</h4>
+        <p>Unable to connect to Redmine.</p>
+        <p>Check your network connection or redmine url and project name in options page.</p>
+        <a href="options.html" class="btn">Go options page</a>
+        <button class="btn">Try again</button>
+    </div>
+    <div id="updating">
+        <h4>Updating...</h4>
+        <div class="progress progress-striped active">
+          <div class="bar" style="width: 100%;"></div>
+      </div>
+    </div>
+  	<div id="activity-template">
+      <div class="row-fluid">
+        <div class="span6 "><small><em>{author}</em></small></div>
+        <div class="span6 text-right"><small><em>{date}</em></small></div>
+      </div>
+		  <p><strong><a href="{url}" class="activity-title">{title}</a></strong></p>
+		  {content}
+  	</div>
+
+    <script src="js/lib/jquery-1.10.2.min.js"></script>
+    <script src="js/lib/moment.min.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+</html>
