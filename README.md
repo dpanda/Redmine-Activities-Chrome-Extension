@@ -8,7 +8,7 @@ It displays an icon in Chrome's toolbar, showing a popup with the latest activit
 Inspired by https://raw.github.com/kdzwinel/Redmine-Issues-Checker/
 
 Installation
-____________
+------------
 
 Download repository and load it manually as an 'Unpacked extension' in Chrome extensions page.
 
