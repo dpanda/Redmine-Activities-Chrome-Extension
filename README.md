@@ -5,7 +5,7 @@ Redmine Activities is a Chrome/Chromium extension for quick access and notificat
 
 It displays an icon in Chrome's toolbar, showing a popup with the latest activities. It also features notifications for new activities.
 
-Inspired by https://raw.github.com/kdzwinel/Redmine-Issues-Checker/
+Inspired by https://github.com/kdzwinel/Redmine-Issues-Checker
 
 Installation
 ------------
